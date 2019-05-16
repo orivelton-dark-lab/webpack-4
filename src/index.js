@@ -1,5 +1,9 @@
+import React from 'react';
+import { render } from 'react-dom';
 
+const Greeting = () => <h1>Hello !!<h1/>
 
-(() =>{
-  document.getElementById('target').innerText  = 'Webpack 4'
-})();
+render(
+  <Greeting />,
+  document.getElementById('target')
+)
